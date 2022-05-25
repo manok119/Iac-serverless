@@ -17,10 +17,10 @@ app.get("/status", (req, res) => res.json({ status: "ok", sns: sns }));
 app.post("/send", (req, res) => {
   var connection = mysql.createConnection({
     // 공용 데이터 사용 d조
-    host: "project3-db-for-individuals.cpajpop7ewnt.ap-northeast-2.rds.amazonaws.com",
-    user: "dob_user_d-1",
-    password: "project3d-1",
-    database: "project3d",
+    host: "",
+    user: "",
+    password: "",
+    database: "",
   });
   connection.connect();
 
