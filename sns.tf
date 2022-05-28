@@ -35,7 +35,7 @@ data "aws_iam_policy_document" "sns_topic_policy" {
       variable = "AWS:SourceOwner"
 
       values = [
-        "694280818671",
+        "<유저아이디 숫자>",
       ]
     }
 
