@@ -3,9 +3,9 @@ resource "aws_sns_topic" "stock_empty" {
 }
 
 resource "aws_sns_topic_subscription" "stock_empty_sqs_target" {
-  topic_arn = "arn:aws:sns:ap-northeast-2:694280818671:stock_empty"
+  topic_arn = "arn:aws:sns:ap-northeast-2:<유저아이디숫자>:stock_empty"
   protocol = "sqs"
-  endpoint = "arn:aws:sqs:ap-northeast-2:694280818671:stock_queue"
+  endpoint = "arn:aws:sqs:ap-northeast-2:<유저아이디숫자>:stock_queue"
 }
 
 resource "aws_sns_topic_policy" "default" {
